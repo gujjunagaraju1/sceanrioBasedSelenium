@@ -43,10 +43,9 @@
                 <version>3.0.0</version> <!-- Use a recent version -->
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>testng.xml</suiteXmlFile> <!-- Path to your TestNG suite -->
+                        <suiteXmlFile>testng-RaceSolution.xml</suiteXmlFile> <!-- Path to your TestNG suite -->
                     </suiteXmlFiles>
-                    <parallel>methods</parallel> <!-- Optional parallel config -->
-                    <threadCount>2</threadCount> <!-- Number of threads -->
+                    <!-- Number of threads -->
                 </configuration>
             </plugin>
         </plugins>
