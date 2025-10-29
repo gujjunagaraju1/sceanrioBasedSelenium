@@ -27,6 +27,12 @@
             <version>7.10.2</version>
             <scope>test</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-testng -->
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-testng</artifactId>
+            <version>2.30.0</version>
+        </dependency>
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
@@ -45,6 +51,9 @@
                     <suiteXmlFiles>
                         <suiteXmlFile>testng-RaceSolution.xml</suiteXmlFile> <!-- Path to your TestNG suite -->
                     </suiteXmlFiles>
+                    <systemPropertyVariables>
+                        <allure.results.directory>target/allure-results</allure.results.directory>
+                    </systemPropertyVariables>
                     <!-- Number of threads -->
                 </configuration>
             </plugin>
